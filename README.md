@@ -131,7 +131,8 @@ the title, which is the "ends with ?" row in the table.
 
 The idea comes from `replyEnding()` in [CopilotKit/OpenDuet](https://github.com/CopilotKit/OpenDuet) (MIT,
 `openbot/server/src/proactive/engine.ts`): set lists and drafts aside, take the last paragraph, find its question,
-keep a short closing sentence together with the one before it. The cases from its tests pass here too. This code is
+keep a short closing sentence together with the one before it (the 20 and 240 character limits are its numbers).
+The cases from its tests pass here too. This code is
 written from scratch; Russian, requests without a question mark and the measurement are mine.
 
 ## Tests
@@ -144,4 +145,4 @@ python3 tests/test_reply_ending.py
 and feed the tool hostile inputs (200 KB of brackets, deeply nested JSON). The labelled messages are not in this
 repository, only the counts above.
 
-MIT. Aleksandr Shulgin ([@Aleksandr_NFA](https://t.me/Aleksandr_NFA)).
+MIT. Aleksandr Shulgin ([@Aleksandr_NFA](https://t.me/Aleksandr_NFA), [Sanexxxx777](https://github.com/Sanexxxx777)).
